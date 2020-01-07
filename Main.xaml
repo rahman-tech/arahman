@@ -1,0 +1,347 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="654,696" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:ss="clr-namespace:System.Security;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="23">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>UiPath.CV</x:String>
+      <x:String>System.Security</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="17">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>UiPath.CV</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Flowchart DisplayName="Citrix Automation" sap:VirtualizedContainerService.HintSize="634,636" sap2010:WorkflowViewState.IdRef="Flowchart_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        <av:Point x:Key="ShapeLocation">270,2.5</av:Point>
+        <av:Size x:Key="ShapeSize">60,75</av:Size>
+        <av:PointCollection x:Key="ConnectorLocation">300,77.5 300,270 350,270</av:PointCollection>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Flowchart.StartNode>
+      <x:Reference>__ReferenceID0</x:Reference>
+    </Flowchart.StartNode>
+    <FlowStep>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <av:Point x:Key="ShapeLocation">30,137</av:Point>
+          <av:Size x:Key="ShapeSize">200,66</av:Size>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <Sequence DisplayName="Find Image" sap:VirtualizedContainerService.HintSize="376,306" sap2010:WorkflowViewState.IdRef="Sequence_1">
+        <Sequence.Variables>
+          <Variable x:TypeArguments="ui:UiElement" Name="findImage" />
+        </Sequence.Variables>
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+        <ui:WaitImageAppear DisplayName="Find Image 'mstsc.exe 137.116.147.6...'" FoundElement="[findImage]" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="WaitImageAppear_1">
+          <ui:WaitImageAppear.Image>
+            <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" Profile="Basic" TargetImageBase64="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" />
+          </ui:WaitImageAppear.Image>
+          <ui:WaitImageAppear.Target>
+            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="&lt;wnd app='mstsc.exe' cls='TscShellContainerClass' title='137.116.147.62:3389 - Remote Desktop Connection' /&gt;">
+              <ui:Target.TimeoutMS>
+                <InArgument x:TypeArguments="x:Int32" />
+              </ui:Target.TimeoutMS>
+              <ui:Target.WaitForReady>
+                <InArgument x:TypeArguments="ui:WaitForReady" />
+              </ui:Target.WaitForReady>
+            </ui:Target>
+          </ui:WaitImageAppear.Target>
+        </ui:WaitImageAppear>
+        <ui:Highlight Color="Red" HighlightTime="2000" sap:VirtualizedContainerService.HintSize="334,68" sap2010:WorkflowViewState.IdRef="Highlight_1">
+          <ui:Highlight.Target>
+            <ui:Target ClippingRegion="{x:Null}" Selector="{x:Null}" Element="[findImage]">
+              <ui:Target.TimeoutMS>
+                <InArgument x:TypeArguments="x:Int32" />
+              </ui:Target.TimeoutMS>
+              <ui:Target.WaitForReady>
+                <InArgument x:TypeArguments="ui:WaitForReady" />
+              </ui:Target.WaitForReady>
+            </ui:Target>
+          </ui:Highlight.Target>
+        </ui:Highlight>
+      </Sequence>
+    </FlowStep>
+    <FlowStep>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <av:Point x:Key="ShapeLocation">350,127</av:Point>
+          <av:Size x:Key="ShapeSize">200,66</av:Size>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <Sequence DisplayName="Send Hotkey in Remote" sap:VirtualizedContainerService.HintSize="200,66" sap2010:WorkflowViewState.IdRef="Sequence_2">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+        <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Send Hotkey 'Remote Connection'" sap:VirtualizedContainerService.HintSize="334,154" sap2010:WorkflowViewState.IdRef="SendHotkey_1" Key="N" KeyModifiers="Ctrl, Shift" SpecialKey="False">
+          <ui:SendHotkey.Target>
+            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="8bf70cdec6cea0c4466c6fa8fe4ac7c2" Selector="&lt;wnd app='mstsc.exe' cls='TscShellContainerClass' title='137.116.147.62:3389 - Remote Desktop Connection' /&gt;">
+              <ui:Target.TimeoutMS>
+                <InArgument x:TypeArguments="x:Int32" />
+              </ui:Target.TimeoutMS>
+              <ui:Target.WaitForReady>
+                <InArgument x:TypeArguments="ui:WaitForReady" />
+              </ui:Target.WaitForReady>
+            </ui:Target>
+          </ui:SendHotkey.Target>
+        </ui:SendHotkey>
+        <ui:TypeInto ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into" sap:VirtualizedContainerService.HintSize="334,96" sap2010:WorkflowViewState.IdRef="TypeInto_1" Text="This is Citrix automation. Thank you...">
+          <ui:TypeInto.Target>
+            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}">
+              <ui:Target.TimeoutMS>
+                <InArgument x:TypeArguments="x:Int32" />
+              </ui:Target.TimeoutMS>
+              <ui:Target.WaitForReady>
+                <InArgument x:TypeArguments="ui:WaitForReady" />
+              </ui:Target.WaitForReady>
+            </ui:Target>
+          </ui:TypeInto.Target>
+        </ui:TypeInto>
+        <ui:ClickImage ContinueOnError="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click Image 'explorer.exe NEW'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="ClickImage_1" KeyModifiers="None" MouseButton="BTN_LEFT">
+          <ui:ClickImage.CursorPosition>
+            <ui:CursorPosition Position="Center">
+              <ui:CursorPosition.OffsetX>
+                <InArgument x:TypeArguments="x:Int32" />
+              </ui:CursorPosition.OffsetX>
+              <ui:CursorPosition.OffsetY>
+                <InArgument x:TypeArguments="x:Int32" />
+              </ui:CursorPosition.OffsetY>
+            </ui:CursorPosition>
+          </ui:ClickImage.CursorPosition>
+          <ui:ClickImage.Image>
+            <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" Profile="Basic" TargetImageBase64="iVBORw0KGgoAAAANSUhEUgAAAA8AAAAQCAYAAADJViUEAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABgSURBVDhPzZJBCsAgDARzKe3/35U/pQw0oHVzEIV2LlZ3R1RqscBPZDMLd39mI2R0kk4mPM5LbqCy4diqpNZA3rktVyJIGVKqRNgvp8jYfr/Z92BVCVTWyUs/ySxfyRE3s5tuyuU98xoAAAAASUVORK5CYII=" />
+          </ui:ClickImage.Image>
+          <ui:ClickImage.Target>
+            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="&lt;wnd app='explorer.exe' cls='CabinetWClass' title='NEW VM FILE' /&gt;">
+              <ui:Target.TimeoutMS>
+                <InArgument x:TypeArguments="x:Int32" />
+              </ui:Target.TimeoutMS>
+              <ui:Target.WaitForReady>
+                <InArgument x:TypeArguments="ui:WaitForReady" />
+              </ui:Target.WaitForReady>
+            </ui:Target>
+          </ui:ClickImage.Target>
+        </ui:ClickImage>
+        <ui:ClickImage ContinueOnError="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_DOWN" DisplayName="Click Image 'explorer.exe NEW'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="ClickImage_2" KeyModifiers="None" MouseButton="BTN_LEFT">
+          <ui:ClickImage.CursorPosition>
+            <ui:CursorPosition Position="Center">
+              <ui:CursorPosition.OffsetX>
+                <InArgument x:TypeArguments="x:Int32" />
+              </ui:CursorPosition.OffsetX>
+              <ui:CursorPosition.OffsetY>
+                <InArgument x:TypeArguments="x:Int32" />
+              </ui:CursorPosition.OffsetY>
+            </ui:CursorPosition>
+          </ui:ClickImage.CursorPosition>
+          <ui:ClickImage.Image>
+            <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" Profile="Basic" TargetImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFcAAAATCAYAAADlAZEWAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAF3SURBVFhH7ZbZjcQgEAXJiWxIhlRIhVCIhOXmgduSPbhtrcRHaZcbiqY9wjnnNzxsuYxsuYxsuYxsuYw8INd4JYQXgNSW6HeXMK/U3pJtE0bB+sobqs8HPCRXem2xHA6pDPT5BZQ7rwFY7SUKDWVtoP1DGOQG5gP/xEW5MWqvRvjL8Mh11mspvKoRlGT3tNHq61jdn/UxpcQ+fezxReR2KhUZNY+b9hXByxn2uZ5eXpCbDz+Krv2LuCos5U7qUNQaSF4vShnENWB8XAMuKF5A3yesEfqtfjsY5ZY6IkWcHuhU4ln9RIm8JjhdVo3EOj7OVfcT/iejtrD43eDPuW/KDVgts5RhXbjs0idGZf2bxhL7XIVBbizj85zKwyGosTflmvDroNXn9JCEHXIpjI9lqULUosy8z9VUgDwkF58TISEdjmq/Khc+ToenOq3f2nseFkkkzlva5rmGfRLtN3lA7uaMT+W2CCGg+v83duQysuUysuWy4fwfXkkQzisCKdcAAAAASUVORK5CYII=" />
+          </ui:ClickImage.Image>
+          <ui:ClickImage.Target>
+            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="&lt;wnd app='explorer.exe' cls='CabinetWClass' title='NEW VM FILE' /&gt;">
+              <ui:Target.TimeoutMS>
+                <InArgument x:TypeArguments="x:Int32" />
+              </ui:Target.TimeoutMS>
+              <ui:Target.WaitForReady>
+                <InArgument x:TypeArguments="ui:WaitForReady" />
+              </ui:Target.WaitForReady>
+            </ui:Target>
+          </ui:ClickImage.Target>
+        </ui:ClickImage>
+      </Sequence>
+    </FlowStep>
+    <FlowStep x:Name="__ReferenceID0">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <av:Point x:Key="ShapeLocation">350,237</av:Point>
+          <av:Size x:Key="ShapeSize">200,66</av:Size>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <Sequence DisplayName="Remote Connection" sap:VirtualizedContainerService.HintSize="200,66" sap2010:WorkflowViewState.IdRef="Sequence_4">
+        <Sequence.Variables>
+          <Variable x:TypeArguments="ui:UiElement" Name="findChrome" />
+          <Variable x:TypeArguments="ss:SecureString" Name="pw" />
+          <Variable x:TypeArguments="x:String" Name="us" />
+        </Sequence.Variables>
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+        <ui:OpenApplication ApplicationWindow="{x:Null}" Arguments="{x:Null}" TimeoutMS="{x:Null}" WorkingDirectory="{x:Null}" DisplayName="Open Application for Remote Connection" FileName="C:\Windows\System32\mstsc.exe" sap:VirtualizedContainerService.HintSize="434,726" sap2010:WorkflowViewState.IdRef="OpenApplication_1" InformativeScreenshot="cb7b604c650f85d54f2ff087b9009ed2" Selector="&lt;wnd app='mstsc.exe' cls='#32770' title='Remote Desktop Connection' /&gt;">
+          <ui:OpenApplication.Body>
+            <ActivityAction x:TypeArguments="x:Object">
+              <ActivityAction.Argument>
+                <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
+              </ActivityAction.Argument>
+              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,580" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                <Sequence.Variables>
+                  <Variable x:TypeArguments="ui:UiElement" Name="found" />
+                </Sequence.Variables>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <ui:TypeInto ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Browse URL" EmptyField="True" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="TypeInto_3" Text="122.144.12.134[k(enter)]">
+                  <ui:TypeInto.Target>
+                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="d23dfc88bb55c824d87e8ed50864ecd2" Selector="&lt;wnd app='mstsc.exe' cls='#32770' title='Remote Desktop Connection' /&gt;&lt;wnd ctrlid='5012' /&gt;&lt;wnd ctrlid='5012' /&gt;&lt;wnd ctrlid='5012' /&gt;">
+                      <ui:Target.TimeoutMS>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:Target.TimeoutMS>
+                      <ui:Target.WaitForReady>
+                        <InArgument x:TypeArguments="ui:WaitForReady" />
+                      </ui:Target.WaitForReady>
+                    </ui:Target>
+                  </ui:TypeInto.Target>
+                </ui:TypeInto>
+                <ui:GetRobotCredential TimeoutMS="{x:Null}" AssetName="citrix_user" DisplayName="Get OrchestratorCredential" sap:VirtualizedContainerService.HintSize="334,22" sap2010:WorkflowViewState.IdRef="GetRobotCredential_1" Password="[pw]" Username="[us]" />
+                <ui:TypeSecureText ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type 'Password'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="TypeSecureText_1" SecureText="[pw]">
+                  <ui:TypeSecureText.Target>
+                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="1252c245d1d7d10b6601a94e30bc76f5" Selector="&lt;wnd app='credentialuibroker.exe' cls='Credential Dialog Xaml Host' title='Windows Security' /&gt;&lt;ctrl automationid='PasswordField_2' /&gt;&lt;ctrl automationid='PlaceholderTextContentPresenter' /&gt;">
+                      <ui:Target.TimeoutMS>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:Target.TimeoutMS>
+                      <ui:Target.WaitForReady>
+                        <InArgument x:TypeArguments="ui:WaitForReady" />
+                      </ui:Target.WaitForReady>
+                    </ui:Target>
+                  </ui:TypeSecureText.Target>
+                </ui:TypeSecureText>
+                <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'OK' Button" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_4" KeyModifiers="None" MouseButton="BTN_LEFT">
+                  <ui:Click.CursorPosition>
+                    <ui:CursorPosition Position="Center">
+                      <ui:CursorPosition.OffsetX>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:CursorPosition.OffsetX>
+                      <ui:CursorPosition.OffsetY>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:CursorPosition.OffsetY>
+                    </ui:CursorPosition>
+                  </ui:Click.CursorPosition>
+                  <ui:Click.Target>
+                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="39b0e62878a7f5e98c5b8dcfc21eec9d" Selector="&lt;wnd app='credentialuibroker.exe' cls='Credential Dialog Xaml Host' title='Windows Security' /&gt;&lt;ctrl automationid='OkButton' /&gt;">
+                      <ui:Target.TimeoutMS>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:Target.TimeoutMS>
+                      <ui:Target.WaitForReady>
+                        <InArgument x:TypeArguments="ui:WaitForReady" />
+                      </ui:Target.WaitForReady>
+                    </ui:Target>
+                  </ui:Click.Target>
+                </ui:Click>
+              </Sequence>
+            </ActivityAction>
+          </ui:OpenApplication.Body>
+        </ui:OpenApplication>
+      </Sequence>
+    </FlowStep>
+    <FlowStep>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <av:Point x:Key="ShapeLocation">30,237</av:Point>
+          <av:Size x:Key="ShapeSize">200,66</av:Size>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <Sequence DisplayName="Credential Status" sap:VirtualizedContainerService.HintSize="200,66" sap2010:WorkflowViewState.IdRef="Sequence_6">
+        <Sequence.Variables>
+          <Variable x:TypeArguments="ss:SecureString" Name="pw" />
+          <Variable x:TypeArguments="x:String" Name="us" />
+        </Sequence.Variables>
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+        <ui:GetRobotCredential TimeoutMS="{x:Null}" AssetName="citrix_user" DisplayName="Get Credential" sap:VirtualizedContainerService.HintSize="334,22" sap2010:WorkflowViewState.IdRef="GetRobotCredential_2" Password="[pw]" Username="[us]" />
+        <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="334,59" sap2010:WorkflowViewState.IdRef="MessageBox_3" Text="[us.ToString]" />
+      </Sequence>
+    </FlowStep>
+    <FlowStep>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <av:Point x:Key="ShapeLocation">20,347</av:Point>
+          <av:Size x:Key="ShapeSize">200,66</av:Size>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <Sequence DisplayName="Copy Paste" sap:VirtualizedContainerService.HintSize="200,66" sap2010:WorkflowViewState.IdRef="Sequence_8">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+        <ui:OpenApplication ApplicationWindow="{x:Null}" Arguments="{x:Null}" TimeoutMS="{x:Null}" WorkingDirectory="{x:Null}" DisplayName="Open Application 'explorer.exe  Run'" FileName="C:\Windows\explorer.exe" sap:VirtualizedContainerService.HintSize="434,334" sap2010:WorkflowViewState.IdRef="OpenApplication_2" InformativeScreenshot="af30b2f0c5d011295df48d575232ebd4" Selector="&lt;wnd app='explorer.exe' cls='#32770' title='Run' /&gt;">
+          <ui:OpenApplication.Body>
+            <ActivityAction x:TypeArguments="x:Object">
+              <ActivityAction.Argument>
+                <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
+              </ActivityAction.Argument>
+              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,188" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <ui:TypeInto ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into" sap:VirtualizedContainerService.HintSize="334,96" sap2010:WorkflowViewState.IdRef="TypeInto_4" Text="cmd[k(enter)]">
+                  <ui:TypeInto.Target>
+                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}">
+                      <ui:Target.TimeoutMS>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:Target.TimeoutMS>
+                      <ui:Target.WaitForReady>
+                        <InArgument x:TypeArguments="ui:WaitForReady" />
+                      </ui:Target.WaitForReady>
+                    </ui:Target>
+                  </ui:TypeInto.Target>
+                </ui:TypeInto>
+              </Sequence>
+            </ActivityAction>
+          </ui:OpenApplication.Body>
+        </ui:OpenApplication>
+      </Sequence>
+    </FlowStep>
+  </Flowchart>
+</Activity>
