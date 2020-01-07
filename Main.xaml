@@ -307,7 +307,7 @@
           <av:Size x:Key="ShapeSize">200,66</av:Size>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <Sequence DisplayName="Copy Paste Test" sap:VirtualizedContainerService.HintSize="476,253" sap2010:WorkflowViewState.IdRef="Sequence_8">
+      <Sequence DisplayName="Copy Paste Test" sap:VirtualizedContainerService.HintSize="476,353" sap2010:WorkflowViewState.IdRef="Sequence_8">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -322,6 +322,14 @@
             </ActivityAction>
           </ui:OpenApplication.Body>
         </ui:OpenApplication>
+        <Assign sap:VirtualizedContainerService.HintSize="434,60" sap2010:WorkflowViewState.IdRef="Assign_1">
+          <Assign.To>
+            <OutArgument x:TypeArguments="x:Object">[AcceptedMarkupExtensionExpressionTypeAttribute]</OutArgument>
+          </Assign.To>
+          <Assign.Value>
+            <InArgument x:TypeArguments="x:Object">[AcceptedMarkupExtensionExpressionTypeAttribute+B]</InArgument>
+          </Assign.Value>
+        </Assign>
       </Sequence>
     </FlowStep>
   </Flowchart>
